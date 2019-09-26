@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pravé tlačítko myši</title>
+</head>
+<script>
+        $(document).mousedown(function(ev){
+            if(ev.which == 3)
+            {
+                $("body").css("background-color","red");
+                  alert("Kliknul jsi na pravé tlačítko. až zavřeš toto upozornění zkus klinout na kolečko myši (prostřední tlačítko)");
+            }
+            else if (ev.which == 2)
+            {
+                $("body").css("background-color","blue");
+                  alert("Výborně, podařilo se ti klinout na kolečko myši (prostřední tlačítko)");
+            }
+            else{
+                $("body").css("background-color","yellow");
+            }
+           
+        });
+    </script>
+<body>
+    Klikni na pravé tlačitko myši
+
+    ...a pokus se pochopit ten kod :-) 
+</body>
+</html>
